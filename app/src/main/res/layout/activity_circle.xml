@@ -16,14 +16,27 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp" />
 
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="3"
+        android:id="@+id/textViewCount"
+        android:layout_below="@+id/buttonShow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+
     <SeekBar
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/seekBarCircle"
         android:layout_below="@+id/buttonShow"
+        android:layout_toRightOf="@id/textViewCount"
         android:layout_marginRight="10dp"
         android:max="50"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="0dp" />
 
     <ImageView
         android:layout_width="fill_parent"
@@ -32,4 +45,6 @@
         android:layout_marginRight="10dp"
         android:id="@+id/imageViewCircle"
         android:layout_below="@+id/seekBarCircle" />
+
+
 </RelativeLayout>
